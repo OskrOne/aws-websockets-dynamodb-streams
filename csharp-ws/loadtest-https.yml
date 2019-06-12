@@ -1,0 +1,11 @@
+config:
+  target: "https://3hdwwu6yi9.execute-api.us-west-2.amazonaws.com/dev"
+  phases:
+    - duration: 10
+      arrivalRate: 10
+scenarios:
+  - flow:
+    - post:
+        url: "/assets"
+        json:
+          ContractId: "A1305"

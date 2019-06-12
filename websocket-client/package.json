@@ -1,0 +1,15 @@
+{
+  "name": "websocket-client",
+  "version": "1.0.0",
+  "description": "WebSocket Client Test Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oscar López",
+  "license": "ISC",
+  "dependencies": {
+    "websocket": "^1.0.28",
+    "ws": "^7.0.0"
+  }
+}

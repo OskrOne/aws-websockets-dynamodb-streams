@@ -1,0 +1,12 @@
+config:
+  target: "wss://g49fepw5h8.execute-api.us-west-2.amazonaws.com/Test"
+  phases:
+    - duration: 10
+      arrivalRate: 10
+scenarios:
+  - engine: "ws"
+    flow:
+      - send:
+          action: "message"
+          contractId: "A100"
+      - think: 10
