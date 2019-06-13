@@ -25,7 +25,7 @@ namespace AwsDotnetCsharp
             {
                 ConnectionId = context.ConnectionId,
                 Data = stream
-            };
+            };  
 
             var result = client.PostToConnectionAsync(postRequest);
             result.Wait();

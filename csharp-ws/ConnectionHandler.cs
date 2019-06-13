@@ -23,7 +23,7 @@ namespace AwsDotnetCsharp
 
             Connection connection = new Connection();
             String contractId = request.QueryStringParameters["ContractId"];
-            connection.add(request.RequestContext.ConnectionId, contractId);
+            connection.Add(request.RequestContext.ConnectionId, contractId);
 
             return new APIGatewayProxyResponse
             {
@@ -47,7 +47,7 @@ namespace AwsDotnetCsharp
         public APIGatewayProxyResponse Disconnect(APIGatewayProxyRequest request)
         {
             Connection connection = new Connection();
-            connection.delete(request.RequestContext.ConnectionId);
+            connection.Delete(request.RequestContext.ConnectionId);
 
             return new APIGatewayProxyResponse
             {
